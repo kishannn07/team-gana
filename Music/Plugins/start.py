@@ -24,8 +24,8 @@ def start_pannel():
                 InlineKeyboardButton(text="🎚 Commands Menu", url="https://telegra.ph/Music-commands-11-27")
             ],
             [ 
-                InlineKeyboardButton(text="📨Official Channel", url="https://t.me/gana_Updates"),
-                InlineKeyboardButton(text="📨Support Group", url="https://t.me/gana_Support")
+                InlineKeyboardButton(text="📨Official Channel", url="https://t.me/M3_AND_U"),
+                InlineKeyboardButton(text="📨Support Group", url="https://t.me/come_and_feel_music")
             ],
     ]
     return "🎛  **This is Music Music Bot**", buttons
@@ -38,9 +38,9 @@ pstart_markup=InlineKeyboardMarkup(
                 [InlineKeyboardButton("🧰 Cᴏᴍᴍᴀɴᴅꜱ 🧰", url=f"https://telegra.ph/Music-commands-11-27")],
                 [
                     InlineKeyboardButton(
-                        "📢 Uᴘᴅᴀᴛᴇꜱ 📢", url=f"https://t.me/gana_Updates"), 
+                        "📢 Uᴘᴅᴀᴛᴇꜱ 📢", url=f"https://t.me/M3_AND_U"), 
                     InlineKeyboardButton(
-                        "💬 Sᴜᴘᴘᴏʀᴛ 💬", url=f"https://t.me/gana_Support")
+                        "💬 Sᴜᴘᴘᴏʀᴛ 💬", url=f"https://t.me/come_and_feel_music")
                 ],
                 [ InlineKeyboardButton("🧑‍💻 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 🧑‍💻", url=f"https://te.legra.ph/file/9a1a48def0a9d91e49e28.jpg"),]
 
@@ -63,7 +63,7 @@ async def welcome(_, message: Message):
                 await remove_active_chat(chat_id)
             if member.id == BOT_ID:
                 out = start_pannel()
-                await message.reply_text(f"Welcome To MentosMusic Music\n\nPromote me as administrator in your group otherwise I will not function properly.", reply_markup=InlineKeyboardMarkup(out[1]))
+                await message.reply_text(f"Welcome To kishupihuMusic Music\n\nPromote me as administrator in your group otherwise I will not function properly.", reply_markup=InlineKeyboardMarkup(out[1]))
                 return
         except:
             return
@@ -116,7 +116,7 @@ async def play(_, message: Message):
 📎**Channel Link:** [Visit From Here]({x["channel_url"]})
 🔗**Link:** [Link]({x["webpage_url"]})
 
-⚡️ __Searched Powered By gana Music Bot__"""
+⚡️ __Searched Powered By kishupihu Music Bot__"""
             link = (x["webpage_url"])
             buttons = personal_markup(link)
             userid = message.from_user.id
