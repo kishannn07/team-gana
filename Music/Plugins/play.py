@@ -128,7 +128,7 @@ async def play(_, message: Message):
         fucksemx = 1
         what = "Audio Searched"
         await LOG_CHAT(message, what)
-        mystic = await message.reply_text(f"**🔄 sᴇʀᴠᴇʀ sʟᴏᴡ ʜᴀɪ ʏʜ {username}**")
+        mystic = await message.reply_text(f"**🔄 sᴇʀᴠᴇʀ sʟᴏᴡ ʜᴀɪ {username}**")
         if audio.file_size > 157286400:
             await mystic.edit_text("Audio File Size Should Be Less Than 150 mb") 
             return
@@ -254,7 +254,7 @@ async def play(_, message: Message):
         await LOG_CHAT(message, what)
         query = message.text.split(None, 1)[1]
         mystic = await message.reply_text("**🔄 Dʜᴜɴᴅʜ ʀʜᴀ ʜᴜ**")
-        try
+        try:
             a = VideosSearch(query, limit=1)
             for result in a.result()["result"]:
                 title = (result["title"])
