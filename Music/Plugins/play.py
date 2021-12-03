@@ -54,7 +54,7 @@ def time_to_seconds(time):
         int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":")))
     )
 
-@Client.on_message(command(["play", "play@pihu_kishu_Bot"]))
+@Client.on_message(command(["play", "play@pihu_kishu_bot"]))
 async def play(_, message: Message):
     chat_id = message.chat.id
 #   if not await is_served_chat(chat_id):
@@ -95,6 +95,8 @@ async def play(_, message: Message):
         "I don't have the required permission to perform this action."
         + "\n**Permission:** __BAN USERS__")
         return
+    chid = message.chat.id
+
     try:
         b = await app.get_chat_member(message.chat.id , user_id) 
         if b.status == "kicked":
@@ -112,14 +114,18 @@ async def play(_, message: Message):
         else:
             try:
                 xxy = await app.export_chat_invite_link(message.chat.id)
-                yxy = await app.revoke_chat_invite_link(message.chat.id, xxy)
-                await ASS_ACC.join_chat(yxy.invite_link)
+                #xxy = xxy.invite_link
+                inv_lnk=str(xxy)
+                inv_lnk = inv_lnk.replace("https://t.me/+","https://t.me/joinchat/")
+                await ASS_ACC.join_chat(inv_lnk)
                 await message.reply(f"{ASSNAME} Joined Successfully",) 
+                #yxy = await app.revoke_chat_invite_link(message.chat.id, xxy)
                 await remove_active_chat(chat_id)
             except UserAlreadyParticipant:
                 pass
             except Exception as e:
-                return await message.reply_text(f"__**Assistant Failed To Join**__\n\n**Reason**:{e}")       
+                return await message.reply_text(f"__**Assistant Failed To Join**__\n\n**Reason**:{e}")               
+              
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
     url = get_url(message)
     await message.delete()
@@ -128,7 +134,7 @@ async def play(_, message: Message):
         fucksemx = 1
         what = "Audio Searched"
         await LOG_CHAT(message, what)
-        mystic = await message.reply_text(f"**🔄 sᴇʀᴠᴇʀ sʟᴏᴡ ʜᴀɪ {username}**")
+        mystic = await message.reply_text(f"**🔄 sᴇʀᴠᴇʀ sʟᴏᴡ ʜᴀɪ ᴡᴀɪᴛ🥺 {username}**")
         if audio.file_size > 157286400:
             await mystic.edit_text("Audio File Size Should Be Less Than 150 mb") 
             return
@@ -153,7 +159,7 @@ async def play(_, message: Message):
             else file_name,
         )
         title = "Selected Audio from Telegram"
-        link = "https://t.me/xender_xd"
+        link = "https://t.me/ToxicCybers"
         thumb = "cache/Audio.png"
         videoid = "smex1"
     elif url:
@@ -253,7 +259,7 @@ async def play(_, message: Message):
         what = "Query Given"
         await LOG_CHAT(message, what)
         query = message.text.split(None, 1)[1]
-        mystic = await message.reply_text("**🔄 Dʜᴜɴᴅʜ ʀʜᴀ ʜᴜ**")
+        mystic = await message.reply_text("**🔄 Dʜᴇᴋ ʀᴀʜᴀ ʜᴜ**")
         try:
             a = VideosSearch(query, limit=1)
             for result in a.result()["result"]:
