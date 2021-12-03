@@ -19,7 +19,7 @@ async def gstats(_, message):
     try:
         test = speedtest.Speedtest()
         test.get_best_server()
-        m = await m.edit("Rᴜɴɴɪɴɢ Dᴏᴡɴʟᴏᴅ Sᴘᴇᴇᴅᴛᴇsᴛ😏")
+        m = await m.edit("Rᴜɴɴɪɴɢ Dᴏᴡɴʟᴏᴅ Sᴘᴇᴇᴅᴛᴇsᴛ")
         test.download()
         m = await m.edit("Rᴜɴɴɪɴɢ Uᴘʟᴏᴀᴅ Sᴘᴇᴇᴅᴛᴇsᴛ")
         test.upload()
