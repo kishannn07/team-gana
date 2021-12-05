@@ -1,9 +1,9 @@
-# gana Music Bot
+# PihuXkishu Music Bot
 
 For Any Query Join Our Support Group 👥
 
-<a href="https://t.me/ganaUpdates"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
-<a href="t.me/gana_support"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/come_and_feel_music"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+<a href="t.me/come_and_feel_music"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
 
 Hey Welcome To Here 💫💫 You Can Make Your Own Music Bot For Music 🎶
@@ -21,5 +21,5 @@ Hey Welcome To Here 💫💫 You Can Make Your Own Music Bot For Music 🎶
 
 ## CREDIT 💕
 `
-https://t.me/KINGISBACK34
+Toxic owner
 https://t.me/JorDenXD
